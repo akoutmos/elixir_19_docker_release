@@ -3,7 +3,6 @@ FROM erlang:21 AS app_builder
 
 # Set environment variables for building the application
 ENV MIX_ENV=prod \
-    TEST=1 \
     LANG=C.UTF-8
 
 # Fetch the latest version of Elixir (once the 1.9 docker image is available you won't have to do this)
